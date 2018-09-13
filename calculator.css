@@ -18,7 +18,7 @@
 	grid-column: 4;
 	grid-row:5/span 2;
 	background-color: rgb(230, 115, 0);
-}
+	}
 			
 button {
 	border-style: solid;
@@ -30,4 +30,4 @@ button {
 .data {
 	padding: 10px;
 	border:5px solid;
-}
+	}
