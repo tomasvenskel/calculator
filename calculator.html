@@ -4,79 +4,75 @@
 	<head>
 	
 		<style>
-		
-		.screen {
-		background-color: LightGray;
-		grid-column:1/span 4;
-		text-align: right;
-		padding:100px 10px;
-		font-size: 40px;
-		font-family: "Lucida Console", Monospace;
-		}
-		
-		.calc-container {
-			display: grid;
-			grid-gap: 0px 0px;
-			grid-template-columns:75px 75px 75px 75px;
-			grid-template-rows:150px 75px 75px 75px 75px 75px;
+			.screen {
+				background-color: LightGray;
+				grid-column:1/span 4;
+				text-align: right;
+				padding:100px 10px;
+				font-size: 40px;
+				font-family: "Lucida Console", Monospace;
+			}
+			
+			.calc-container {
+				display: grid;
+				grid-gap: 0px 0px;
+				grid-template-columns:75px 75px 75px 75px;
+				grid-template-rows:150px 75px 75px 75px 75px 75px;
 
-		}
-		
-		.equals {
-		grid-column: 4;
-		grid-row:5/span 2;
-		background-color: rgb(230, 115, 0);
-		}
-		
-		button {
-		border-style: solid;
-		border-width: 1px;
-		background-color: rgb(255, 255, 255);
-		font-size: 20px;
-		}
-		
-		.data {
-		padding: 10px;
-		border:5px solid;
-		}
-		
+			}
+			
+			.equals {
+				grid-column: 4;
+				grid-row:5/span 2;
+				background-color: rgb(230, 115, 0);
+			}
+			
+			button {
+				border-style: solid;
+				border-width: 1px;
+				background-color: rgb(255, 255, 255);
+				font-size: 20px;
+			}
+			
+			.data {
+				padding: 10px;
+				border:5px solid;
+			}
 		</style>
 	
 	</head>
 	
 	<body>
 	
+		<div class="calc-container"> 
 	
+			<div class="screen">0</div>
 	
-	<div class="calc-container"> 
+			<button class="operator" action="clear">AC</button>
+			<button class="operator" action="back"><</button>
+			<button class="operator" action="div">/</button>
+			<button class="operator" action="mult">X</button>
+			
+			<button class="number" value="7">7</button>
+			<button class="number" value="8">8</button>
+			<button class="number" value="9">9</button>
+			<button class="operator" action="sub">-</button>
+			
+			<button class="number" value="4">4</button>
+			<button class="number" value="5">5</button>
+			<button class="number" value="6">6</button>
+			<button class="operator" action="add">+</button>
+			
+			<button class="number" value="1">1</button>
+			<button class="number" value="2">2</button>
+			<button class="number" value="3">3</button>
+			<button class="equals" action="equals">=</button>
+			
+			<button class="operator" action="perc">%</button>
+			<button class="number" value="0">0</button>
+			<button class="operator" action="decimal">.</div>
 	
-	<div class="screen">0</div>
-	
-	<button class="operator" action="clear">AC</button>
-	<button class="operator" action="back"><</button>
-	<button class="operator" action="div">/</button>
-	<button class="operator" action="mult">X</button>
-	
-	<button class="number" value="7">7</button>
-	<button class="number" value="8">8</button>
-	<button class="number" value="9">9</button>
-	<button class="operator" action="sub">-</button>
-	
-	<button class="number" value="4">4</button>
-	<button class="number" value="5">5</button>
-	<button class="number" value="6">6</button>
-	<button class="operator" action="add">+</button>
-	
-	<button class="number" value="1">1</button>
-	<button class="number" value="2">2</button>
-	<button class="number" value="3">3</button>
-	<button class="equals" action="equals">=</button>
-	
-	<button class="operator" action="perc">%</button>
-	<button class="number" value="0">0</button>
-	<button class="operator" action="decimal">.</div>
-	
-	</div>
+		</div>
 	
 	</body>
 
